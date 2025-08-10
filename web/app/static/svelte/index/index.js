@@ -743,62 +743,75 @@ var indexApp = (function () {
     const file$2 = "app\\svelte\\index\\Pages\\DataPage.svelte";
 
     function create_fragment$2(ctx) {
-    	let div5;
-    	let div4;
+    	let div7;
+    	let div6;
     	let div0;
     	let p;
     	let t2;
+    	let div5;
     	let div3;
     	let div1;
     	let t3;
     	let div2;
+    	let t4;
+    	let div4;
 
     	const block = {
     		c: function create() {
-    			div5 = element("div");
-    			div4 = element("div");
+    			div7 = element("div");
+    			div6 = element("div");
     			div0 = element("div");
     			p = element("p");
     			p.textContent = `Team: ${/*teamNumber*/ ctx[0]}`;
     			t2 = space();
+    			div5 = element("div");
     			div3 = element("div");
     			div1 = element("div");
     			t3 = space();
     			div2 = element("div");
+    			t4 = space();
+    			div4 = element("div");
     			attr_dev(p, "class", "text-text text-3xl font-medium");
-    			add_location(p, file$2, 13, 12, 451);
-    			attr_dev(div0, "class", "col-span-1 space-y-4 w-[300px] h-[70px] mx-8 mt-8 mb-8 flex-1 bg-primary rounded-3xl border-2 border-accent shadow-lg p-8 min-h-[7vh] flex flex-col items-start justify-center relative");
-    			add_location(div0, file$2, 8, 8, 207);
-    			attr_dev(div1, "class", "col-span-1 space-y-4 ml-8 mb-8 flex-1 bg-primary rounded-3xl border-2 border-accent shadow-lg p-8 min-h-[7vh] flex flex-col items-start justify-center relative");
-    			add_location(div1, file$2, 16, 12, 596);
-    			attr_dev(div2, "class", "col-span-1 space-y-4 ml-8 mb-8 flex-1 bg-primary rounded-3xl border-2 border-accent shadow-lg p-8 min-h-[7vh] flex flex-col items-start justify-center relative");
-    			add_location(div2, file$2, 21, 12, 830);
-    			attr_dev(div3, "class", "col-span-1 grid grid-cols-2");
-    			add_location(div3, file$2, 15, 8, 541);
-    			attr_dev(div4, "class", "col-span-2");
-    			add_location(div4, file$2, 7, 4, 173);
-    			attr_dev(div5, "class", "grid grid-cols-3 gap-4");
-    			add_location(div5, file$2, 6, 0, 131);
+    			add_location(p, file$2, 14, 12, 518);
+    			attr_dev(div0, "class", "w-[300px] h-[70px] mx-8 mt-8 mb-4 bg-primary rounded-3xl border-2 border-accent shadow-lg p-8 flex flex-col items-start justify-center relative flex-shrink-0");
+    			add_location(div0, file$2, 9, 8, 300);
+    			attr_dev(div1, "class", "bg-primary rounded-3xl border-2 border-accent shadow-lg p-8 flex flex-col items-start justify-center relative");
+    			add_location(div1, file$2, 21, 16, 875);
+    			attr_dev(div2, "class", "bg-primary rounded-3xl border-2 border-accent shadow-lg p-8 flex flex-col items-start justify-center relative");
+    			add_location(div2, file$2, 25, 16, 1082);
+    			attr_dev(div3, "class", "flex-1 grid grid-cols-2 gap-4 min-h-0");
+    			add_location(div3, file$2, 20, 12, 806);
+    			attr_dev(div4, "class", "flex-1 bg-primary rounded-3xl border-2 border-accent shadow-lg p-8 flex flex-col items-start justify-center relative min-h-0");
+    			add_location(div4, file$2, 32, 12, 1367);
+    			attr_dev(div5, "class", "flex-1 flex flex-col mx-8 mb-8 gap-4 min-h-0");
+    			add_location(div5, file$2, 18, 8, 682);
+    			attr_dev(div6, "class", "col-span-2 flex flex-col h-full");
+    			add_location(div6, file$2, 7, 4, 194);
+    			attr_dev(div7, "class", "grid grid-cols-3 gap-4 h-[calc(100vh-5rem)]");
+    			add_location(div7, file$2, 6, 0, 131);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, div5, anchor);
-    			append_dev(div5, div4);
-    			append_dev(div4, div0);
+    			insert_dev(target, div7, anchor);
+    			append_dev(div7, div6);
+    			append_dev(div6, div0);
     			append_dev(div0, p);
-    			append_dev(div4, t2);
-    			append_dev(div4, div3);
+    			append_dev(div6, t2);
+    			append_dev(div6, div5);
+    			append_dev(div5, div3);
     			append_dev(div3, div1);
     			append_dev(div3, t3);
     			append_dev(div3, div2);
+    			append_dev(div5, t4);
+    			append_dev(div5, div4);
     		},
     		p: noop,
     		i: noop,
     		o: noop,
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(div5);
+    			if (detaching) detach_dev(div7);
     		}
     	};
 
