@@ -713,18 +713,18 @@ var indexApp = (function () {
     			attr_dev(input, "type", "file");
     			input.multiple = true;
     			attr_dev(input, "class", "hidden");
-    			add_location(input, file, 62, 4, 1583);
+    			add_location(input, file, 62, 4, 1588);
     			if (!src_url_equal(img.src, img_src_value = "static/images/upload.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "upload");
     			attr_dev(img, "class", "w-64 h-64 object-contain mb-8 mt-[-2rem]");
-    			add_location(img, file, 70, 4, 1724);
+    			add_location(img, file, 70, 4, 1729);
     			attr_dev(p, "class", "text-text text-3xl font-medium mb-4");
-    			add_location(p, file, 75, 4, 1856);
+    			add_location(p, file, 75, 4, 1861);
     			attr_dev(div, "class", "w-[95%] mx-auto mt-8 mb-8 flex-1 bg-primary rounded-3xl border-2 border-accent shadow-lg p-8 min-h-[80vh] flex flex-col items-center justify-center relative cursor-pointer");
     			attr_dev(div, "tabindex", "0");
     			attr_dev(div, "role", "button");
-    			add_location(div, file, 54, 2, 1263);
-    			attr_dev(main, "class", "bg-background min-h-screen");
+    			add_location(div, file, 54, 2, 1268);
+    			attr_dev(main, "class", "bg-background min-h-screen pt-8");
     			add_location(main, file, 52, 0, 1185);
     		},
     		l: function claim(nodes) {

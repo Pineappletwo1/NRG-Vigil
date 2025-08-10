@@ -50,7 +50,7 @@
   }
 </script>
 
-<main class="bg-background min-h-screen" on:paste={onPaste}>
+<main class="bg-background min-h-screen pt-8" on:paste={onPaste}>
   <NavBar />
   <div
     class="w-[95%] mx-auto mt-8 mb-8 flex-1 bg-primary rounded-3xl border-2 border-accent shadow-lg p-8 min-h-[80vh] flex flex-col items-center justify-center relative cursor-pointer"
