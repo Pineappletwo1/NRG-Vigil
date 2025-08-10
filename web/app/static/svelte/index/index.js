@@ -743,54 +743,62 @@ var indexApp = (function () {
     const file$2 = "app\\svelte\\index\\Pages\\DataPage.svelte";
 
     function create_fragment$2(ctx) {
+    	let div5;
     	let div4;
-    	let div1;
     	let div0;
     	let p;
     	let t2;
     	let div3;
+    	let div1;
+    	let t3;
     	let div2;
 
     	const block = {
     		c: function create() {
+    			div5 = element("div");
     			div4 = element("div");
-    			div1 = element("div");
     			div0 = element("div");
     			p = element("p");
     			p.textContent = `Team: ${/*teamNumber*/ ctx[0]}`;
     			t2 = space();
     			div3 = element("div");
+    			div1 = element("div");
+    			t3 = space();
     			div2 = element("div");
     			attr_dev(p, "class", "text-text text-3xl font-medium");
-    			add_location(p, file$2, 13, 12, 440);
-    			attr_dev(div0, "class", "w-[300px] h-[70px] mx-8 mt-8 mb-8 flex-1 bg-primary rounded-3xl border-2 border-accent shadow-lg p-8 min-h-[7vh] flex flex-col items-start justify-center relative");
-    			add_location(div0, file$2, 8, 8, 217);
-    			attr_dev(div1, "class", "col-span-1 space-y-4");
-    			add_location(div1, file$2, 7, 4, 173);
-    			attr_dev(div2, "class", "mx-8 mt-8 mb-8 flex-1 bg-primary rounded-3xl border-2 border-accent shadow-lg p-8 min-h-[7vh] flex flex-col items-start justify-center relative");
-    			add_location(div2, file$2, 17, 8, 582);
-    			attr_dev(div3, "class", "col-span-1 space-y-4");
-    			add_location(div3, file$2, 16, 4, 538);
-    			attr_dev(div4, "class", "grid grid-cols-3 gap-4");
-    			add_location(div4, file$2, 6, 0, 131);
+    			add_location(p, file$2, 13, 12, 451);
+    			attr_dev(div0, "class", "col-span-1 space-y-4 w-[300px] h-[70px] mx-8 mt-8 mb-8 flex-1 bg-primary rounded-3xl border-2 border-accent shadow-lg p-8 min-h-[7vh] flex flex-col items-start justify-center relative");
+    			add_location(div0, file$2, 8, 8, 207);
+    			attr_dev(div1, "class", "col-span-1 space-y-4 ml-8 mb-8 flex-1 bg-primary rounded-3xl border-2 border-accent shadow-lg p-8 min-h-[7vh] flex flex-col items-start justify-center relative");
+    			add_location(div1, file$2, 16, 12, 596);
+    			attr_dev(div2, "class", "col-span-1 space-y-4 ml-8 mb-8 flex-1 bg-primary rounded-3xl border-2 border-accent shadow-lg p-8 min-h-[7vh] flex flex-col items-start justify-center relative");
+    			add_location(div2, file$2, 21, 12, 830);
+    			attr_dev(div3, "class", "col-span-1 grid grid-cols-2");
+    			add_location(div3, file$2, 15, 8, 541);
+    			attr_dev(div4, "class", "col-span-2");
+    			add_location(div4, file$2, 7, 4, 173);
+    			attr_dev(div5, "class", "grid grid-cols-3 gap-4");
+    			add_location(div5, file$2, 6, 0, 131);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, div4, anchor);
-    			append_dev(div4, div1);
-    			append_dev(div1, div0);
+    			insert_dev(target, div5, anchor);
+    			append_dev(div5, div4);
+    			append_dev(div4, div0);
     			append_dev(div0, p);
     			append_dev(div4, t2);
     			append_dev(div4, div3);
+    			append_dev(div3, div1);
+    			append_dev(div3, t3);
     			append_dev(div3, div2);
     		},
     		p: noop,
     		i: noop,
     		o: noop,
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(div4);
+    			if (detaching) detach_dev(div5);
     		}
     	};
 
