@@ -522,7 +522,7 @@ var indexApp = (function () {
     			set_style(span, "left", 12.5 + /*idx*/ ctx[10] * 25 + "%");
     			attr_dev(span, "role", "button");
     			attr_dev(span, "tabindex", "0");
-    			add_location(span, file$3, 35, 6, 1110);
+    			add_location(span, file$3, 35, 6, 1099);
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, span, anchor);
@@ -585,10 +585,10 @@ var indexApp = (function () {
     			}
 
     			attr_dev(div0, "class", div0_class_value = `absolute top-1/2 -translate-y-1/2 -translate-x-1/2 h-14 w-1/4 bg-secondary rounded-full z-0 shadow-md transition-all duration-300 ${/*highlightPositions*/ ctx[2][/*active*/ ctx[0]]}`);
-    			add_location(div0, file$3, 30, 2, 832);
+    			add_location(div0, file$3, 30, 2, 821);
     			attr_dev(div1, "class", "flex-1 relative h-full z-10");
-    			add_location(div1, file$3, 33, 2, 1026);
-    			attr_dev(nav, "class", "relative w-[95%] mx-auto h-16 bg-primary rounded-full flex items-center shadow-lg border-2 border-accent overflow-visible");
+    			add_location(div1, file$3, 33, 2, 1015);
+    			attr_dev(nav, "class", "relative mx-8 h-16 bg-primary rounded-full flex items-center shadow-lg border-2 border-accent overflow-visible");
     			add_location(nav, file$3, 27, 0, 688);
     		},
     		l: function claim(nodes) {
@@ -743,30 +743,54 @@ var indexApp = (function () {
     const file$2 = "app\\svelte\\index\\Pages\\DataPage.svelte";
 
     function create_fragment$2(ctx) {
-    	let div;
-    	let h1;
+    	let div4;
+    	let div1;
+    	let div0;
+    	let p;
+    	let t2;
+    	let div3;
+    	let div2;
 
     	const block = {
     		c: function create() {
-    			div = element("div");
-    			h1 = element("h1");
-    			h1.textContent = "Uhhhh temporary page pls change this lmao";
-    			add_location(h1, file$2, 5, 4, 208);
-    			attr_dev(div, "class", "w-[20%] mx-auto mt-8 mb-8 flex-1 bg-primary rounded-3xl border-2 border-accent shadow-lg p-8 min-h-[80vh] flex flex-col items-center justify-center relative cursor-pointer");
-    			add_location(div, file$2, 0, 0, 0);
+    			div4 = element("div");
+    			div1 = element("div");
+    			div0 = element("div");
+    			p = element("p");
+    			p.textContent = `Team: ${/*teamNumber*/ ctx[0]}`;
+    			t2 = space();
+    			div3 = element("div");
+    			div2 = element("div");
+    			attr_dev(p, "class", "text-text text-3xl font-medium");
+    			add_location(p, file$2, 13, 12, 440);
+    			attr_dev(div0, "class", "w-[300px] h-[70px] mx-8 mt-8 mb-8 flex-1 bg-primary rounded-3xl border-2 border-accent shadow-lg p-8 min-h-[7vh] flex flex-col items-start justify-center relative");
+    			add_location(div0, file$2, 8, 8, 217);
+    			attr_dev(div1, "class", "col-span-1 space-y-4");
+    			add_location(div1, file$2, 7, 4, 173);
+    			attr_dev(div2, "class", "mx-8 mt-8 mb-8 flex-1 bg-primary rounded-3xl border-2 border-accent shadow-lg p-8 min-h-[7vh] flex flex-col items-start justify-center relative");
+    			add_location(div2, file$2, 17, 8, 582);
+    			attr_dev(div3, "class", "col-span-1 space-y-4");
+    			add_location(div3, file$2, 16, 4, 538);
+    			attr_dev(div4, "class", "grid grid-cols-3 gap-4");
+    			add_location(div4, file$2, 6, 0, 131);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, div, anchor);
-    			append_dev(div, h1);
+    			insert_dev(target, div4, anchor);
+    			append_dev(div4, div1);
+    			append_dev(div1, div0);
+    			append_dev(div0, p);
+    			append_dev(div4, t2);
+    			append_dev(div4, div3);
+    			append_dev(div3, div2);
     		},
     		p: noop,
     		i: noop,
     		o: noop,
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(div);
+    			if (detaching) detach_dev(div4);
     		}
     	};
 
@@ -781,16 +805,29 @@ var indexApp = (function () {
     	return block;
     }
 
-    function instance$2($$self, $$props) {
+    function instance$2($$self, $$props, $$invalidate) {
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots('DataPage', slots, []);
+    	let teamNumber = "10000";
+    	let leaderboardTeams = [1, 2, 3, 4, 1000, 200, 513, 8645, 948, 9994];
     	const writable_props = [];
 
     	Object.keys($$props).forEach(key => {
     		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== '$$' && key !== 'slot') console.warn(`<DataPage> was created with unknown prop '${key}'`);
     	});
 
-    	return [];
+    	$$self.$capture_state = () => ({ teamNumber, leaderboardTeams });
+
+    	$$self.$inject_state = $$props => {
+    		if ('teamNumber' in $$props) $$invalidate(0, teamNumber = $$props.teamNumber);
+    		if ('leaderboardTeams' in $$props) leaderboardTeams = $$props.leaderboardTeams;
+    	};
+
+    	if ($$props && "$$inject" in $$props) {
+    		$$self.$inject_state($$props.$$inject);
+    	}
+
+    	return [teamNumber];
     }
 
     class DataPage extends SvelteComponentDev {
@@ -835,14 +872,14 @@ var indexApp = (function () {
     			attr_dev(input, "type", "file");
     			input.multiple = true;
     			attr_dev(input, "class", "hidden");
-    			add_location(input, file$1, 59, 4, 1612);
+    			add_location(input, file$1, 59, 4, 1601);
     			if (!src_url_equal(img.src, img_src_value = "static/images/upload.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "upload");
     			attr_dev(img, "class", "w-64 h-64 object-contain mb-8 mt-[-2rem]");
-    			add_location(img, file$1, 67, 4, 1763);
+    			add_location(img, file$1, 67, 4, 1752);
     			attr_dev(p, "class", "text-text text-3xl font-medium mb-4");
-    			add_location(p, file$1, 72, 4, 1901);
-    			attr_dev(div, "class", "w-[95%] mx-auto mt-8 mb-8 flex-1 bg-primary rounded-3xl border-2 border-accent shadow-lg p-8 min-h-[80vh] flex flex-col items-center justify-center relative cursor-pointer");
+    			add_location(p, file$1, 72, 4, 1890);
+    			attr_dev(div, "class", "mx-8 mt-8 mb-8 flex-1 bg-primary rounded-3xl border-2 border-accent shadow-lg p-8 min-h-[80vh] flex flex-col items-center justify-center relative cursor-pointer");
     			attr_dev(div, "tabindex", "0");
     			attr_dev(div, "role", "button");
     			add_location(div, file$1, 50, 0, 1270);
