@@ -1,5 +1,9 @@
 <script>
-  let active = 0;
+  import { createEventDispatcher } from 'svelte';
+  
+  export let active = 0; // Accept active as prop from parent
+  const dispatch = createEventDispatcher();
+  
   const navItems = ["Import", "Data", "View", "Export"];
   const highlightPositions = [
     "left-[12.5%]",
@@ -7,8 +11,10 @@
     "left-[62.5%]",
     "left-[87.5%]",
   ];
+  
   function setActiveIndex(idx) {
-    active = idx;
+    // Dispatch event to parent instead of setting local state
+    dispatch('navigate', { index: idx });
   }
 
   function handleKeydown(event, idx) {
