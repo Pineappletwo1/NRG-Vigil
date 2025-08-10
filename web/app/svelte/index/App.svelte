@@ -58,6 +58,7 @@
     on:drop={onDrop}
     on:dragover={onDragOver}
     tabindex="0"
+    role="button"
   >
     <input
       type="file"
