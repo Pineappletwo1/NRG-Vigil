@@ -1036,16 +1036,16 @@ var indexApp = (function () {
     			t5 = space();
     			create_component(dataleaderboardcard.$$.fragment);
     			attr_dev(p, "class", "text-text text-3xl font-medium");
-    			add_location(p, file$2, 32, 12, 1181);
+    			add_location(p, file$2, 32, 12, 1170);
     			attr_dev(div0, "class", "w-[300px] h-[70px] mb-4 bg-primary rounded-3xl border-2 border-accent shadow-lg p-8 flex flex-col items-start justify-center relative flex-shrink-0");
-    			add_location(div0, file$2, 27, 8, 973);
+    			add_location(div0, file$2, 27, 8, 962);
     			attr_dev(div1, "class", "flex-1 grid grid-cols-2 gap-4 min-h-0");
-    			add_location(div1, file$2, 39, 12, 1498);
+    			add_location(div1, file$2, 39, 12, 1487);
     			attr_dev(div2, "class", "flex-1 flex flex-col gap-4 min-h-0");
-    			add_location(div2, file$2, 37, 8, 1378);
+    			add_location(div2, file$2, 37, 8, 1367);
     			attr_dev(div3, "class", "col-span-2 flex flex-col h-full");
-    			add_location(div3, file$2, 25, 4, 838);
-    			attr_dev(div4, "class", "mt-8 grid grid-cols-3 gap-4 min-h-screen");
+    			add_location(div3, file$2, 25, 4, 827);
+    			attr_dev(div4, "class", "grid grid-cols-3 gap-4 h-full");
     			add_location(div4, file$2, 23, 0, 693);
     		},
     		l: function claim(nodes) {
@@ -1191,14 +1191,14 @@ var indexApp = (function () {
     			attr_dev(input, "type", "file");
     			input.multiple = true;
     			attr_dev(input, "class", "hidden");
-    			add_location(input, file$1, 59, 4, 1591);
+    			add_location(input, file$1, 59, 4, 1586);
     			if (!src_url_equal(img.src, img_src_value = "static/images/upload.png")) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "alt", "upload");
     			attr_dev(img, "class", "w-64 h-64 object-contain mb-8 mt-[-2rem]");
-    			add_location(img, file$1, 67, 4, 1742);
+    			add_location(img, file$1, 67, 4, 1737);
     			attr_dev(p, "class", "text-text text-3xl font-medium mb-4");
-    			add_location(p, file$1, 72, 4, 1880);
-    			attr_dev(div, "class", "mt-8 flex-1 bg-primary rounded-3xl border-2 border-accent shadow-lg p-8 min-h-[80vh] flex flex-col items-center justify-center relative cursor-pointer");
+    			add_location(p, file$1, 72, 4, 1875);
+    			attr_dev(div, "class", "flex-1 bg-primary rounded-3xl border-2 border-accent shadow-lg p-8 min-h-[60vh] flex flex-col items-center justify-center relative cursor-pointer");
     			attr_dev(div, "tabindex", "0");
     			attr_dev(div, "role", "button");
     			add_location(div, file$1, 50, 0, 1270);
@@ -1465,7 +1465,7 @@ var indexApp = (function () {
     			create_component(navbar.$$.fragment);
     			t = space();
     			if (if_block) if_block.c();
-    			attr_dev(main, "class", "bg-background min-h-screen p-8");
+    			attr_dev(main, "class", "bg-background min-h-screen p-8 grid grid-rows-[auto_1fr] gap-8");
     			add_location(main, file, 26, 0, 708);
     		},
     		l: function claim(nodes) {

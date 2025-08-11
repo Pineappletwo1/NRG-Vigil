@@ -49,7 +49,7 @@
 </script>
 
 <div
-    class="mt-8 flex-1 bg-primary rounded-3xl border-2 border-accent shadow-lg p-8 min-h-[80vh] flex flex-col items-center justify-center relative cursor-pointer"
+    class="flex-1 bg-primary rounded-3xl border-2 border-accent shadow-lg p-8 min-h-[60vh] flex flex-col items-center justify-center relative cursor-pointer"
     on:click={openFileDialog}
     on:drop={onDrop}
     on:dragover={onDragOver}
