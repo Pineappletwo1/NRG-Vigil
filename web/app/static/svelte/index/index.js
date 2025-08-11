@@ -940,7 +940,7 @@ var indexApp = (function () {
     	const block = {
     		c: function create() {
     			div = element("div");
-    			attr_dev(div, "class", "flex-1 bg-primary rounded-3xl border-2 border-accent shadow-lg p-8 flex flex-col items-start justify-center relative min-h-0");
+    			attr_dev(div, "class", "ml-4 flex-1 bg-primary rounded-3xl border-2 border-accent shadow-lg p-8 flex flex-col items-start justify-center relative min-h-0");
     			add_location(div, file$3, 0, 0, 0);
     		},
     		l: function claim(nodes) {
@@ -1036,17 +1036,17 @@ var indexApp = (function () {
     			t5 = space();
     			create_component(dataleaderboardcard.$$.fragment);
     			attr_dev(p, "class", "text-text text-3xl font-medium");
-    			add_location(p, file$2, 19, 12, 807);
-    			attr_dev(div0, "class", "w-[300px] h-[70px] mx-8 mb-4 bg-primary rounded-3xl border-2 border-accent shadow-lg p-8 flex flex-col items-start justify-center relative flex-shrink-0");
-    			add_location(div0, file$2, 14, 8, 594);
+    			add_location(p, file$2, 32, 12, 1186);
+    			attr_dev(div0, "class", "w-[300px] h-[70px] mb-4 bg-primary rounded-3xl border-2 border-accent shadow-lg p-8 flex flex-col items-start justify-center relative flex-shrink-0");
+    			add_location(div0, file$2, 27, 8, 978);
     			attr_dev(div1, "class", "flex-1 grid grid-cols-2 gap-4 min-h-0");
-    			add_location(div1, file$2, 25, 12, 1095);
-    			attr_dev(div2, "class", "flex-1 flex flex-col mx-8 mb-8 gap-4 min-h-0");
-    			add_location(div2, file$2, 23, 8, 971);
+    			add_location(div1, file$2, 39, 12, 1503);
+    			attr_dev(div2, "class", "flex-1 flex flex-col gap-4 min-h-0");
+    			add_location(div2, file$2, 37, 8, 1383);
     			attr_dev(div3, "class", "col-span-2 flex flex-col h-full");
-    			add_location(div3, file$2, 12, 4, 488);
-    			attr_dev(div4, "class", "mt-8 grid grid-cols-3 gap-4 h-[calc(100vh-5rem)]");
-    			add_location(div4, file$2, 11, 0, 419);
+    			add_location(div3, file$2, 25, 4, 843);
+    			attr_dev(div4, "class", "py-8 px-8 grid grid-cols-3 gap-4 min-h-screen");
+    			add_location(div4, file$2, 23, 0, 693);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -1108,7 +1108,20 @@ var indexApp = (function () {
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots('DataPage', slots, []);
     	let teamNumber = "10000";
-    	let leaderboardTeams = [1, 2, 3, 4, 1000, 200, 513, 8645, 948, 9994];
+
+    	let leaderboardTeams = [
+    		"PLACEHOLDER0",
+    		"PLACEHOLDER1",
+    		"PLACEHOLDER2",
+    		"PLACEHOLDER3",
+    		"PLACEHOLDER4",
+    		"PLACEHOLDER5",
+    		"PLACEHOLDER6",
+    		"PLACEHOLDER7",
+    		"PLACEHOLDER8",
+    		"PLACEHOLDER9"
+    	];
+
     	const writable_props = [];
 
     	Object.keys($$props).forEach(key => {
