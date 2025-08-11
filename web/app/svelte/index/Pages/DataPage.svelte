@@ -1,4 +1,9 @@
 <script>
+    import DataAccuracyCard from "../Cards/DataAccuracyCard.svelte";
+    import DataCycleTimeCard from "../Cards/DataCycleTimeCard.svelte";
+    import DataHeatMapCard from "../Cards/DataHeatMapCard.svelte";
+    import DataLeaderboardCard from "../Cards/DataLeaderboardCard.svelte";
+
     let teamNumber = "10000";
 
     let leaderboardTeams = [1, 2, 3, 4, 1000, 200, 513, 8645, 948, 9994];
@@ -8,7 +13,7 @@
     <div class="col-span-2 flex flex-col h-full">
         <!-- Team Number Block - Fixed height -->
         <div
-            class="w-[300px] h-[70px] mx-8 mt-8 mb-4 bg-primary rounded-3xl border-2
+            class="w-[300px] h-[70px] mx-8 mb-4 bg-primary rounded-3xl border-2
     border-accent shadow-lg p-8 flex flex-col items-start
     justify-center relative flex-shrink-0"
         >
@@ -19,21 +24,12 @@
         <div class="flex-1 flex flex-col mx-8 mb-8 gap-4 min-h-0">
             <!-- Top row with two equal blocks -->
             <div class="flex-1 grid grid-cols-2 gap-4 min-h-0">
-                <div
-                    class="bg-primary rounded-3xl border-2 border-accent shadow-lg p-8
-                    flex flex-col items-start justify-center relative"
-                ></div>
-                <div
-                    class="bg-primary rounded-3xl border-2 border-accent shadow-lg p-8
-                    flex flex-col items-start justify-center relative"
-                ></div>
+                <DataAccuracyCard/>
+                <DataCycleTimeCard/>
             </div>
 
             <!-- Bottom block - Same height as top row -->
-            <div
-                class="flex-1 bg-primary rounded-3xl border-2 border-accent shadow-lg p-8
-                flex flex-col items-start justify-center relative min-h-0"
-            ></div>
+            <DataHeatMapCard/>
         </div>
     </div>
 </div>
