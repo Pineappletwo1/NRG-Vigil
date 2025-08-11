@@ -744,11 +744,23 @@ var indexApp = (function () {
 
     function create_fragment$6(ctx) {
     	let div;
+    	let p0;
+    	let t1;
+    	let p1;
 
     	const block = {
     		c: function create() {
     			div = element("div");
-    			attr_dev(div, "class", "bg-primary rounded-3xl border-2 border-accent shadow-lg p-8 flex flex-col items-start justify-center relative");
+    			p0 = element("p");
+    			p0.textContent = "PLACEHOLDER";
+    			t1 = space();
+    			p1 = element("p");
+    			p1.textContent = "Still placeholder lol";
+    			attr_dev(p0, "class", "text-text text-3xl font-medium");
+    			add_location(p0, file$6, 4, 4, 156);
+    			attr_dev(p1, "class", "text-text text 2xl font-medium");
+    			add_location(p1, file$6, 5, 4, 219);
+    			attr_dev(div, "class", "bg-primary rounded-3xl border-2 border-accent shadow-lg p-8 flex flex-col items-start justify-start relative");
     			add_location(div, file$6, 0, 0, 0);
     		},
     		l: function claim(nodes) {
@@ -756,6 +768,9 @@ var indexApp = (function () {
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
+    			append_dev(div, p0);
+    			append_dev(div, t1);
+    			append_dev(div, p1);
     		},
     		p: noop,
     		i: noop,
@@ -808,11 +823,23 @@ var indexApp = (function () {
 
     function create_fragment$5(ctx) {
     	let div;
+    	let p0;
+    	let t1;
+    	let p1;
 
     	const block = {
     		c: function create() {
     			div = element("div");
-    			attr_dev(div, "class", "bg-primary rounded-3xl border-2 border-accent shadow-lg p-8 flex flex-col items-start justify-center relative");
+    			p0 = element("p");
+    			p0.textContent = "PLACEHOLDER";
+    			t1 = space();
+    			p1 = element("p");
+    			p1.textContent = "Still placeholder lol";
+    			attr_dev(p0, "class", "text-text text-3xl font-medium");
+    			add_location(p0, file$5, 4, 4, 156);
+    			attr_dev(p1, "class", "text-text text 2xl font-medium");
+    			add_location(p1, file$5, 5, 4, 219);
+    			attr_dev(div, "class", "bg-primary rounded-3xl border-2 border-accent shadow-lg p-8 flex flex-col items-start justify-start relative");
     			add_location(div, file$5, 0, 0, 0);
     		},
     		l: function claim(nodes) {
@@ -820,6 +847,9 @@ var indexApp = (function () {
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
+    			append_dev(div, p0);
+    			append_dev(div, t1);
+    			append_dev(div, p1);
     		},
     		p: noop,
     		i: noop,
@@ -872,11 +902,23 @@ var indexApp = (function () {
 
     function create_fragment$4(ctx) {
     	let div;
+    	let p0;
+    	let t1;
+    	let p1;
 
     	const block = {
     		c: function create() {
     			div = element("div");
-    			attr_dev(div, "class", "flex-1 bg-primary rounded-3xl border-2 border-accent shadow-lg p-8 flex flex-col items-start justify-center relative min-h-0");
+    			p0 = element("p");
+    			p0.textContent = "PLACEHOLDER";
+    			t1 = space();
+    			p1 = element("p");
+    			p1.textContent = "Still placeholder lol";
+    			attr_dev(p0, "class", "text-text text-3xl font-medium");
+    			add_location(p0, file$4, 4, 4, 167);
+    			attr_dev(p1, "class", "text-text text 2xl font-medium");
+    			add_location(p1, file$4, 5, 4, 230);
+    			attr_dev(div, "class", "flex-1 bg-primary rounded-3xl border-2 border-accent shadow-lg p-8 flex flex-col items-start justify-start relative min-h-0");
     			add_location(div, file$4, 0, 0, 0);
     		},
     		l: function claim(nodes) {
@@ -884,6 +926,9 @@ var indexApp = (function () {
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
+    			append_dev(div, p0);
+    			append_dev(div, t1);
+    			append_dev(div, p1);
     		},
     		p: noop,
     		i: noop,
@@ -936,11 +981,23 @@ var indexApp = (function () {
 
     function create_fragment$3(ctx) {
     	let div;
+    	let p0;
+    	let t1;
+    	let p1;
 
     	const block = {
     		c: function create() {
     			div = element("div");
-    			attr_dev(div, "class", "ml-4 flex-1 bg-primary rounded-3xl border-2 border-accent shadow-lg p-8 flex flex-col items-start justify-center relative min-h-0");
+    			p0 = element("p");
+    			p0.textContent = "PLACEHOLDER";
+    			t1 = space();
+    			p1 = element("p");
+    			p1.textContent = "Still placeholder lol";
+    			attr_dev(p0, "class", "text-text text-3xl font-medium");
+    			add_location(p0, file$3, 4, 4, 172);
+    			attr_dev(p1, "class", "text-text text 2xl font-medium");
+    			add_location(p1, file$3, 5, 4, 235);
+    			attr_dev(div, "class", "ml-4 flex-1 bg-primary rounded-3xl border-2 border-accent shadow-lg p-8 flex flex-col items-start justify-start relative min-h-0");
     			add_location(div, file$3, 0, 0, 0);
     		},
     		l: function claim(nodes) {
@@ -948,6 +1005,9 @@ var indexApp = (function () {
     		},
     		m: function mount(target, anchor) {
     			insert_dev(target, div, anchor);
+    			append_dev(div, p0);
+    			append_dev(div, t1);
+    			append_dev(div, p1);
     		},
     		p: noop,
     		i: noop,
