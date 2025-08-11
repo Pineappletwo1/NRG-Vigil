@@ -24,7 +24,7 @@
   }
 </script>
 
-<main class="bg-background min-h-screen pt-8">
+<main class="bg-background min-h-screen p-8">
   <NavBar active={activeIndex} on:navigate={handleNavChange} />
 
   {#if route === "/ImportPage"}

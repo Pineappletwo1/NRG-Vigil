@@ -26,7 +26,7 @@
 </script>
 
 <nav
-  class="relative mx-8 h-16 bg-primary rounded-full flex items-center shadow-lg border-2 border-accent overflow-visible"
+  class="relative h-16 bg-primary rounded-full flex items-center shadow-lg border-2 border-accent overflow-visible"
 >
   <div
     class={`absolute top-1/2 -translate-y-1/2 -translate-x-1/2 h-14 w-1/4 bg-secondary rounded-full z-0 shadow-md transition-all duration-300 ${highlightPositions[active]}`}

@@ -21,7 +21,7 @@
 </script>
 
 <!-- Divides space into 3 equal width columns -->
-<div class="py-8 px-8 grid grid-cols-3 gap-4 min-h-screen">
+<div class="mt-8 grid grid-cols-3 gap-4 min-h-screen">
     <!-- Section that takes up 2 of the columns to the left - team info section -->
     <div class="col-span-2 flex flex-col h-full">
         <!-- Team Number Card - Very small, no need for seperate component -->
