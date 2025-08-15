@@ -2,7 +2,7 @@
   import NavBar from "./NavBar.svelte";
   import DataPage from "./Pages/DataPage.svelte";
   import ImportPage from "./Pages/ImportPage.svelte";
-    import ViewPage from "./Pages/ViewPage.svelte";
+  import ViewPage from "./Pages/ViewPage.svelte";
 
   let route = "/ImportPage"; // Current route as string
 

@@ -1416,40 +1416,63 @@ var indexApp = (function () {
     const file$1 = "app\\svelte\\index\\Pages\\ViewPage.svelte";
 
     function create_fragment$1(ctx) {
-    	let div3;
+    	let div5;
     	let div0;
-    	let p;
-    	let t1;
+    	let img;
+    	let img_src_value;
+    	let t0;
+    	let div4;
+    	let div3;
+    	let button;
+    	let t2;
     	let div2;
     	let div1;
 
     	const block = {
     		c: function create() {
-    			div3 = element("div");
+    			div5 = element("div");
     			div0 = element("div");
-    			p = element("p");
-    			p.textContent = "TODO: ADD FIELD IMAGE";
-    			t1 = space();
+    			img = element("img");
+    			t0 = space();
+    			div4 = element("div");
+    			div3 = element("div");
+    			button = element("button");
+    			button.textContent = "Play";
+    			t2 = space();
     			div2 = element("div");
     			div1 = element("div");
-    			add_location(p, file$1, 9, 8, 284);
+    			if (!src_url_equal(img.src, img_src_value = "static/images/field.png")) attr_dev(img, "src", img_src_value);
+    			attr_dev(img, "alt", "field");
+    			attr_dev(img, "class", "w-full h-full object-contain");
+    			add_location(img, file$1, 9, 8, 284);
     			attr_dev(div0, "class", "flex-1 bg-primary rounded-3xl border-2 border-accent shadow-lg p-8 flex flex-col items-start justify-start relative min-h-0");
     			add_location(div0, file$1, 5, 4, 105);
-    			attr_dev(div1, "class", "grid grid-cols-[60px_1fr] gap-4");
-    			add_location(div1, file$1, 15, 4, 505);
-    			attr_dev(div2, "class", "flex-1 bg-primary rounded-3xl border-2 border-accent shadow-lg p-8 flex flex-col items-start justify-start relative min-h-0");
-    			add_location(div2, file$1, 11, 4, 330);
-    			attr_dev(div3, "class", "grid grid-rows-[1fr_60px] gap-4 h-full");
-    			add_location(div3, file$1, 4, 0, 47);
+    			attr_dev(button, "class", "flex items-center text-text text-3xl font-small");
+    			add_location(button, file$1, 22, 12, 725);
+    			attr_dev(div1, "class", "bg-blue-600 h-4 rounded-full");
+    			set_style(div1, "width", /*progress*/ ctx[0] + "%");
+    			add_location(div1, file$1, 26, 16, 915);
+    			attr_dev(div2, "class", "w-full bg-gray-500 rounded-full h-4");
+    			add_location(div2, file$1, 25, 12, 848);
+    			attr_dev(div3, "class", "grid grid-cols-[60px_1fr] gap-4 w-full justify-center items-center");
+    			add_location(div3, file$1, 19, 8, 608);
+    			attr_dev(div4, "class", "flex-1 bg-primary rounded-3xl border-2 border-accent shadow-lg p-4 flex flex-col items-start justify-center relative");
+    			add_location(div4, file$1, 15, 4, 436);
+    			attr_dev(div5, "class", "grid grid-rows-[1fr_60px] gap-4 h-full");
+    			add_location(div5, file$1, 4, 0, 47);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
     		},
     		m: function mount(target, anchor) {
-    			insert_dev(target, div3, anchor);
-    			append_dev(div3, div0);
-    			append_dev(div0, p);
-    			append_dev(div3, t1);
+    			insert_dev(target, div5, anchor);
+    			append_dev(div5, div0);
+    			append_dev(div0, img);
+    			append_dev(div5, t0);
+    			append_dev(div5, div4);
+    			append_dev(div4, div3);
+    			append_dev(div3, button);
+    			append_dev(div3, t2);
     			append_dev(div3, div2);
     			append_dev(div2, div1);
     		},
@@ -1457,7 +1480,7 @@ var indexApp = (function () {
     		i: noop,
     		o: noop,
     		d: function destroy(detaching) {
-    			if (detaching) detach_dev(div3);
+    			if (detaching) detach_dev(div5);
     		}
     	};
 
@@ -1475,7 +1498,7 @@ var indexApp = (function () {
     function instance$1($$self, $$props, $$invalidate) {
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots('ViewPage', slots, []);
-    	let progress = 45;
+    	let progress = 20;
     	const writable_props = [];
 
     	Object.keys($$props).forEach(key => {
@@ -1485,14 +1508,14 @@ var indexApp = (function () {
     	$$self.$capture_state = () => ({ progress });
 
     	$$self.$inject_state = $$props => {
-    		if ('progress' in $$props) progress = $$props.progress;
+    		if ('progress' in $$props) $$invalidate(0, progress = $$props.progress);
     	};
 
     	if ($$props && "$$inject" in $$props) {
     		$$self.$inject_state($$props.$$inject);
     	}
 
-    	return [];
+    	return [progress];
     }
 
     class ViewPage extends SvelteComponentDev {
@@ -1664,7 +1687,7 @@ var indexApp = (function () {
     			t = space();
     			if (if_block) if_block.c();
     			attr_dev(main, "class", "bg-background min-h-screen p-8 grid grid-rows-[auto_1fr] gap-8");
-    			add_location(main, file, 27, 0, 761);
+    			add_location(main, file, 27, 0, 759);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");

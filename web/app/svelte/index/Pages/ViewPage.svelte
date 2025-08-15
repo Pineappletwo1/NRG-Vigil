@@ -1,5 +1,5 @@
 <script>
-    let progress = 45;
+    let progress = 20;
 </script>
 
 <div class="grid grid-rows-[1fr_60px] gap-4 h-full">
@@ -7,14 +7,28 @@
         class="flex-1 bg-primary rounded-3xl border-2 border-accent shadow-lg p-8
                 flex flex-col items-start justify-start relative min-h-0"
     >
-        <p>TODO: ADD FIELD IMAGE</p>
+        <img
+            src="static/images/field.png"
+            alt="field"
+            class="w-full h-full object-contain"
+        />
     </div>
     <div
-        class="flex-1 bg-primary rounded-3xl border-2 border-accent shadow-lg p-8
-                flex flex-col items-start justify-start relative min-h-0"
+        class="flex-1 bg-primary rounded-3xl border-2 border-accent shadow-lg p-4
+                flex flex-col items-start justify-center relative"
     >
-    <div class = "grid grid-cols-[60px_1fr] gap-4">
-        
+        <div
+            class="grid grid-cols-[60px_1fr] gap-4 w-full justify-center items-center"
+        >
+            <button class="flex items-center text-text text-3xl font-small"
+                >Play</button
+            >
+            <div class="w-full bg-gray-500 rounded-full h-4">
+                <div
+                    class="bg-blue-600 h-4 rounded-full"
+                    style="width: {progress}%"
+                ></div>
+            </div>
+        </div>
     </div>
-</div>
 </div>
