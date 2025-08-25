@@ -1,5 +1,12 @@
 <script>
-    let progress = 20;
+    import { construct_svelte_component } from "svelte/internal";
+
+    let progress = 80;
+
+    //placeholder
+    function changeProgress() {
+        progress = 20;
+    }
 </script>
 
 <div class="grid grid-rows-[1fr_60px] gap-4 h-full">
@@ -20,12 +27,13 @@
         <div
             class="grid grid-cols-[60px_1fr] gap-4 w-full justify-center items-center"
         >
-            <button class="flex items-center text-text text-3xl font-small"
-                >Play</button
+            <button
+                class="flex items-center text-text text-3xl font-small z-50"
+                on:click={changeProgress}>Play</button
             >
             <div class="w-full bg-gray-500 rounded-full h-4">
                 <div
-                    class="bg-blue-600 h-4 rounded-full"
+                    class="bg-blue-600 h-4 rounded-full transition-all duration-300"
                     style="width: {progress}%"
                 ></div>
             </div>
