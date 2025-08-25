@@ -7,4 +7,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return render_template("index.html", name="Flask Svelte")
+    return render_template("index.html", name="Vigil")
+
+if __name__ == "__main__": 
+    app.run()
