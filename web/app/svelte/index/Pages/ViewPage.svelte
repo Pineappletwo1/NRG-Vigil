@@ -4,8 +4,11 @@
     let progress = 80;
 
     //placeholder
-    function changeProgress() {
-        progress = 20;
+    function testGET() {
+        fetch("http://localhost:5000/api/test")
+            .then((response) => response.json())
+            .then((data) => console.log(data))
+            .catch((error) => console.error("Error:", error));
     }
 </script>
 
@@ -29,7 +32,7 @@
         >
             <button
                 class="flex items-center text-text text-3xl font-small z-50"
-                on:click={changeProgress}>Play</button
+                on:click={testGET}>Play</button
             >
             <div class="w-full bg-gray-500 rounded-full h-4">
                 <div

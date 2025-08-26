@@ -22,7 +22,7 @@ function serve() {
 	return {
 		writeBundle() {
 			if (server) return;
-			server = spawn('flask', ['run', '--debug'], {
+			server = spawn('flask', ['run', '--debug', '--host=localhost', '--port=5000'], {
 				stdio: ['ignore', 'inherit', 'inherit'],
 				shell: true
 			});
